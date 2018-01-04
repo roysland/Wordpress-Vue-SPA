@@ -1,8 +1,8 @@
 {
-  "name": "rt-vue-theme",
-  "description": "WordPress theme using Rest API and Vue.js by rtCamp",
+  "name": "wp-spa-theme",
+  "description": "WordPress theme using Rest API and Vue.js",
   "version": "1.0.0",
-  "author": "rtCamp",
+  "author": "PageUp",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",

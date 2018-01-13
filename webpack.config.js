@@ -30,13 +30,28 @@ module.exports = {
         include: [resolve('src'), resolve('test')],
         options: {
           formatter: require('eslint-friendly-formatter'),
-          emitWarning: false
+          emitWarning: false,
+          loaders: {
+            'scss': [
+              'vue-style-loader',
+              'css-loader',
+              'sass-loader'
+            ]
+          }
         }
       },
       {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.s[a|c]ss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       },
       {
         test: /\.(png|jpg|gif|svg)$/,

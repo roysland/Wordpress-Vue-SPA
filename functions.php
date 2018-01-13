@@ -230,12 +230,12 @@ function rt_get_tag_name( $object, $field_name, $request ) {
 	}
 	return $res;
 }
-
-function wpsd_add_book_args() {
+show_admin_bar( false );
+/* function wpsd_add_book_args() {
 	global $wp_post_types;
 
 	$wp_post_types['mjm-clinic-service']->show_in_rest = true;
 	$wp_post_types['mjm-clinic-service']->rest_base = 'services';
 	$wp_post_types['mjm-clinic-service']->rest_controller_class = 'WP_REST_Posts_Controller';
 }
-add_action( 'init', 'wpsd_add_book_args', 30 );
+add_action( 'init', 'wpsd_add_book_args', 30 ); */
